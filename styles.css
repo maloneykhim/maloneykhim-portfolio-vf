@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/*/NAVBAR/*/
+
+.navbar-expand-lg {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+   /* Set the navbar to fixed position */
+    top: 0;
+   /* Position the navbar at the top of the page */
+    padding-top: 20px;
+    width: 100%;
+   /* Full width */
+}
+.nav-link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+a.nav-link {
+    color: #1b3274 !important;
+}
+.nav-link:hover {
+    font-weight: 700;
+}
+.nav-link:active {
+    color: #d62b9d !important;
+    font-weight: 700;
+}
+
+/*/HERO/*/
+
+#hero {
+    position: relative;
+    height: 100vh;
+}
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    color: #1b3274;
+}
+h1.hero-title {
+    font-weight: 400;
+    font-size: 5vw;
+}
+h2.hero-name {
+    font-weight: 700;
+    font-size: 5vw;
+}
+.fa-chevron-down {
+    color: #d62b9d;
+    animation-name: fleche;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes fleche {
+    from {
+        transform: translateY(0%);
+   }
+    to {
+        transform: translateY(40%);
+   }
+}
+
+/*/À PROPOS/*/
+
+.biographie {
+    margin-left: 15%;
+    margin-top: 5%;
+    color: #1b3274;
+}
+h1.titre-bio {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+}
+h2.bio {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+main {
+    background-image: url(img/fondsitev2.svg);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+}
+.btn-outline-primary {
+    border-color: #d62b9d !important;
+    border-width: 2px;
+    color: #d62b9d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    outline: none;
+}
+.btn-outline-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #d62b9d !important;
+    color: white;
+    outline: none;
+}
+
+/*/PROJETS/*/
+
+.projet {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 30vh;
+}
+.titre-projet {
+    font-family: 'Manrope', sans-serif;
+    color: #1b3274;
+    font-weight: 600;
+    font-size: 4vw;
+    z-index: 99;
+}
+.clown {
+    width: 75%;
+}
+.ml-n5 {
+    margin-left: -8.3333333333%;
+}
+.mr-n5 {
+    text-align: right;
+}
+.space {
+    margin-top: 12%;
+}
+.space2 {
+    margin-top: 12%;
+    margin-right: -20%;
+}
+.logiciels {
+    font-family: 'Manrope', sans-serif;
+    color: #1b3274;
+    font-weight: 400;
+    font-size: 0.3em;
+}
+.no1 {
+    background: url(img/mockup-csf-v2.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: 100% auto;
+}
+.no2 {
+    background: url(img/environnement.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+.no3 {
+    background: url(img/cirque-celeste.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+.no4 {
+    background: url(img/noctis.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+.no5 {
+    background: url(img/marcille-finalv2.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: 100% auto;
+}
+.no6 {
+    background: url(img/tofu-le-pandav2.jpg);
+    background-repeat: no-repeat;
+    background-position: 75% 47%;
+    background-size: 100% auto;
+}
+.description-1 {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.description-1:hover {
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+.texte-1 {
+    color: #1b3274;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 15%;
+    font-family: 'Manrope', sans-serif;
+    text-align: right;
+    margin-right: 25%;
+}
+.description-2 {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.description-2:hover {
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+.texte-2 {
+    color: #1b3274;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 15%;
+    font-family: 'Manrope', sans-serif;
+    text-align: left;
+    margin-left: 25%;
+}
+.texte-projet-mobile {
+    display: none;
+}
+
+/*/CONTACT/*/
+
+h1.titre-contact {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    color: #1b3274;
+    text-align: center;
+}
+h2.contact {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: #1b3274;
+    text-align: center;
+}
+.pied-page-milieu {
+    color: white;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.icones {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2vh;
+}
+.icon {
+    width: 8%;
+}
+.icon:hover {
+    transform: scale(1.15);
+    transition-duration: 0.25s;
+}
+.btn-outline-secondary {
+    border-color: #1b3274 !important;
+    border-width: 2px;
+    color: #1b3274;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    outline: none;
+}
+.btn-outline-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #1b3274 !important;
+    color: white;
+    outline: none;
+}
+.modal-backdrop {
+    z-index: 98 !important;
+}
+.swiper1 {
+    width: 960px;
+    height: 540px;
+    object-fit: contain;
+}
+.swiper2 {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #d62b9d;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: white;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: white;
+}
+
+/*/MEDIA QUERIES TABLETTE/*/
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    h1.titre-bio {
+        font-size: 2em;
+   }
+    h2.hero-subtitle {
+        margin-left: 10vw;
+        margin-right: 10vw;
+   }
+    h2.bio {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        font-size: 2.5vw;
+   }
+    .projet {
+        width: 100%;
+        height: 45vh;
+        margin-bottom: 10vh;
+   }
+    .no1 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 40% 50%;
+   }
+    .texte-1 {
+        padding: 12%;
+        margin-right: 10%;
+   }
+    .space {
+        margin-top: 60%;
+   }
+    .titre-projet1 {
+        text-shadow: 1px 1px 0 white;
+   }
+    .titre-projet2 {
+        text-shadow: -1px 1px 0 white;
+   }
+    .no2 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 15% 50%;
+   }
+    .space2 {
+        margin-top: 60%;
+   }
+    .no3 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+   }
+    .no4 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 30% 50%;
+   }
+    .no6 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+   }
+    h2.contact {
+        font-size: 1.7vw;
+   }
+    .icon {
+        width: 15%;
+   }
+    .navbar-expand-lg {
+        overflow: hidden;
+        background-color: white;
+        position: fixed;
+       /* Set the navbar to fixed position */
+        top: 0;
+       /* Position the navbar at the top of the page */
+        padding-top: 20px;
+        text-align: center;
+        font-size: 3em;
+        width: 100%;
+       /* Full width */
+   }
+    a.nav-link {
+        color: #1b3274 !important;
+   }
+    .nav-link:active {
+        color: #d62b9d !important;
+        font-weight: 700;
+   }
+}
+
+/*/MEDIA QUERIES MOBILE/*/
+
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+   }
+    #hero-content {
+        padding-left: 5vw;
+        padding-right: 5vw;
+   }
+    .projet {
+        width: 100%;
+        height: 45vh;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+    .texte-projet-mobile {
+        display: block;
+        margin-bottom: 15vh;
+        margin-top: 3vh;
+        text-align: center;
+        padding-left: 6vw;
+        padding-right: 6vw;
+   }
+    .titre-projet1 {
+        font-family: 'Manrope', sans-serif;
+        color: #1b3274;
+        font-weight: 600;
+        font-size: 1.7em;
+   }
+    .logiciels {
+        font-family: 'Manrope', sans-serif;
+        color: #1b3274;
+        font-weight: 400;
+        font-size: 0.8em;
+   }
+    .description-1 {
+        height: 45vh;
+        margin-bottom: 0;
+        position: inherit;
+   }
+    .description-2 {
+        height: 45vh;
+        margin-bottom: 0;
+        position: inherit;
+   }
+    .texte-1 {
+        padding-left: 12%;
+        padding-right: 12%;
+        text-align: left;
+        margin-right: 0;
+   }
+    .texte-2 {
+        padding-left: 12%;
+        padding-right: 12%;
+        text-align: left;
+        margin-left: 0;
+   }
+    .no1 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 40% 50%;
+   }
+    .no2 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+   }
+    .no3 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+   }
+    .no4 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 30% 50%;
+   }
+    .no6 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+   }
+    main {
+        background-image: url(img/fondsite-vmobile.jpeg);
+        background-repeat: no-repeat;
+        display: block;
+        background-size: cover;
+        overflow: auto;
+   }
+    .titre-projet1 {
+        text-shadow: 1px 1px 0 white;
+   }
+    h2.hero-subtitle {
+        font-size: 1.3em;
+   }
+    h1.hero-title {
+        font-size: 8vw;
+   }
+    h2.hero-name {
+        font-size: 8vw;
+   }
+    .logo {
+        width: 75%;
+   }
+    h2.contact {
+        font-size: 1.7vw;
+   }
+    .icon {
+        width: 15%;
+   }
+    .titre-mobile {
+        display: none;
+   }
+    .navbar-expand-lg {
+        overflow: hidden;
+        background-color: white;
+        position: fixed;
+       /* Set the navbar to fixed position */
+        top: 0;
+       /* Position the navbar at the top of the page */
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+       /* Full width */
+   }
+    a.nav-link {
+        color: #1b3274 !important;
+   }
+    .nav-link:active {
+        color: #d62b9d !important;
+        font-weight: 700;
+   }
+    h1.titre-bio {
+        font-size: 1.5em;
+   }
+    h2.bio {
+        font-size: 1em;
+        padding-right: 8vw;
+   }
+    .btn-outline-primary {
+        font-size: 1em !important;
+   }
+    h2.contact {
+        font-size: 0.8em;
+        padding-left: 8vw;
+        padding-right: 8vw;
+   }
+    h1.titre-contact {
+        font-size: 1.5em;
+   }
+    .icon {
+        width: 35%;
+        padding-bottom: 1.5vh;
+   }
+}
