@@ -491,11 +491,44 @@
   </div>
   <br><br><br>
 </main>
-<script type="module" src="main.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/a5d663837a.js" crossorigin="anonymous"></script>
+<script language="javascript" type="text/javascript">
+//Swiper Cirque Céleste
+const swiper1 = new Swiper('.swiper1', {
+  direction: 'horizontal',
+  effect: "coverflow",
+  loop: true,
+  zoom: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+//Swiper Illustrations
+const swiper2 = new Swiper('.swiper2', {
+  direction: 'horizontal',
+  loop: true,
+  zoom: true,
+  effect: "coverflow",
+  centeredSlides: true,
+
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
 
 
 
