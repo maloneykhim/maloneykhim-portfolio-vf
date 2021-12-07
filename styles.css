@@ -133,6 +133,10 @@ main {
     height: 45vh;
     margin-bottom: 30vh;
 }
+.lien-site{
+    text-align: center;
+    color: #d62b9d;
+}
 .titre-projet {
     font-family: 'Manrope', sans-serif;
     color: #1b3274;
