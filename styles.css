@@ -519,11 +519,16 @@ h2.contact {
         background-size: auto 100%;
         background-position: 50% 50%;
    }
-   .no7 {
+    .no7 {
     object-fit: cover;
     background-size: auto 100%;
     background-position: 50% 50%;
     }
+    .no8 {
+        object-fit: cover;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+   }
     main {
         background-image: url(img/fondsite-vmobile.jpeg);
         background-repeat: no-repeat;
